@@ -4,7 +4,6 @@ import Logo from "../../components/header/Logo";
 import NavMenu from "../../components/header/NavMenu";
 import IconGroup from "../../components/header/IconGroup";
 import MobileMenu from "../../components/header/MobileMenu";
-import HeaderTop from "../../components/header/HeaderTop";
 
 const HeaderOne = ({
   layout,
@@ -36,7 +35,7 @@ const HeaderOne = ({
         headerPositionClass ? headerPositionClass : ""
       }`}
     >
-      <div
+      {/* <div
         className={`${headerPaddingClass ? headerPaddingClass : ""} ${
           top === "visible" ? "d-none d-lg-block" : "d-none"
         } header-top-area ${
@@ -44,10 +43,9 @@ const HeaderOne = ({
         }`}
       >
         <div className={layout === "container-fluid" ? layout : "container"}>
-          {/* header top */}
           <HeaderTop borderStyle={borderStyle} />
         </div>
-      </div>
+      </div> */}
 
       <div
         className={` ${

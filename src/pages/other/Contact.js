@@ -12,90 +12,25 @@ const Contact = ({ location }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Contact</title>
+        <title>Glancea | Contact</title>
         <meta
           name="description"
-          content="Contact of flone react minimalist eCommerce template."
+          content="Contact of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
+      {/* <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
         Contact
-      </BreadcrumbsItem>
+      </BreadcrumbsItem> */}
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
-        <div className="contact-area pt-100 pb-100">
+        {/* <Breadcrumb /> */}
+        <div className="contact-area pb-100">
           <div className="container">
-            <div className="contact-map mb-10">
+            {/* <div className="contact-map mb-10">
               <LocationMap latitude="47.444" longitude="-122.176" />
-            </div>
+            </div> */}
             <div className="custom-row-2">
-              <div className="col-lg-4 col-md-5">
-                <div className="contact-info-wrap">
-                  <div className="single-contact-info">
-                    <div className="contact-icon">
-                      <i className="fa fa-phone" />
-                    </div>
-                    <div className="contact-info-dec">
-                      <p>+012 345 678 102</p>
-                      <p>+012 345 678 102</p>
-                    </div>
-                  </div>
-                  <div className="single-contact-info">
-                    <div className="contact-icon">
-                      <i className="fa fa-globe" />
-                    </div>
-                    <div className="contact-info-dec">
-                      <p>
-                        <a href="mailto:urname@email.com">urname@email.com</a>
-                      </p>
-                      <p>
-                        <a href="//urwebsitenaem.com">urwebsitenaem.com</a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="single-contact-info">
-                    <div className="contact-icon">
-                      <i className="fa fa-map-marker" />
-                    </div>
-                    <div className="contact-info-dec">
-                      <p>Address goes here, </p>
-                      <p>street, Crossroad 123.</p>
-                    </div>
-                  </div>
-                  <div className="contact-social text-center">
-                    <h3>Follow Us</h3>
-                    <ul>
-                      <li>
-                        <a href="//facebook.com">
-                          <i className="fa fa-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="//pinterest.com">
-                          <i className="fa fa-pinterest-p" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="//thumblr.com">
-                          <i className="fa fa-tumblr" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="//vimeo.com">
-                          <i className="fa fa-vimeo" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="//twitter.com">
-                          <i className="fa fa-twitter" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
               <div className="col-lg-8 col-md-7">
                 <div className="contact-form">
                   <div className="contact-title mb-30">
@@ -131,6 +66,55 @@ const Contact = ({ location }) => {
                   <p className="form-messege" />
                 </div>
               </div>
+              <div className="col-lg-4 col-md-5">
+                <div className="contact-info-wrap">
+                  <div className="single-contact-info">
+                    <div className="contact-icon">
+                      <i className="fa fa-phone" />
+                    </div>
+                    <div className="contact-info-dec">
+                      <p>+49 175 1404599</p>
+                    </div>
+                  </div>
+                  <div className="single-contact-info">
+                    <div className="contact-icon">
+                      <i className="fa fa-globe" />
+                    </div>
+                    <div className="contact-info-dec">
+                      <p>
+                        <a href="mailto:info@email.com">info@glancea.de</a>
+                      </p>
+                      <p>
+                        <a href="https://www.glancea.de">ww.Glancea.de</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single-contact-info">
+                    <div className="contact-icon">
+                      <i className="fa fa-map-marker" />
+                    </div>
+                    <div className="contact-info-dec">
+                      <p>München</p>
+                      <p>Deutschland</p>
+                    </div>
+                  </div>
+                  <div className="contact-social text-center">
+                    <h3>Follow Us</h3>
+                    <ul>
+                      <li>
+                        <a href="//facebook.com">
+                          <i className="fa fa-facebook" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="//instagram.com">
+                          <i className="fa fa-instagram" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,7 +124,7 @@ const Contact = ({ location }) => {
 };
 
 Contact.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
 };
 
 export default Contact;

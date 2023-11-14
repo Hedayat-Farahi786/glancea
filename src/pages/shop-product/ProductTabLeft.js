@@ -15,10 +15,10 @@ const ProductTabLeft = ({ location, product }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Product Page</title>
+        <title>Glancea | Product Page</title>
         <meta
           name="description"
-          content="Product page of flone react minimalist eCommerce template."
+          content="Product page of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
 
@@ -57,15 +57,15 @@ const ProductTabLeft = ({ location, product }) => {
 
 ProductTabLeft.propTypes = {
   location: PropTypes.object,
-  product: PropTypes.object
+  product: PropTypes.object,
 };
 
 const mapStateToProps = (state, ownProps) => {
   const itemId = ownProps.match.params.id;
   return {
     product: state.productData.products.filter(
-      single => single.id === itemId
-    )[0]
+      (single) => single.id === itemId
+    )[0],
   };
 };
 

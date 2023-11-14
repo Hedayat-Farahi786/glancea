@@ -15,19 +15,19 @@ const Checkout = ({ location, cartItems, currency }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Checkout</title>
+        <title>Glancea</title>
         <meta
           name="description"
-          content="Checkout page of flone react minimalist eCommerce template."
+          content="Checkout page of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
+      {/* <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
         Checkout
-      </BreadcrumbsItem>
+      </BreadcrumbsItem> */}
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="checkout-area pt-95 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
@@ -48,13 +48,13 @@ const Checkout = ({ location, cartItems, currency }) => {
                           <input type="text" />
                         </div>
                       </div>
-                      <div className="col-lg-12">
+                      {/* <div className="col-lg-12">
                         <div className="billing-info mb-20">
                           <label>Company Name</label>
                           <input type="text" />
                         </div>
-                      </div>
-                      <div className="col-lg-12">
+                      </div> */}
+                      {/* <div className="col-lg-12">
                         <div className="billing-select mb-20">
                           <label>Country</label>
                           <select>
@@ -66,36 +66,30 @@ const Checkout = ({ location, cartItems, currency }) => {
                             <option>Barbados</option>
                           </select>
                         </div>
-                      </div>
-                      <div className="col-lg-12">
+                      </div> */}
+                      <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>Street Address</label>
-                          <input
-                            className="billing-address"
-                            placeholder="House number and street name"
-                            type="text"
-                          />
-                          <input
-                            placeholder="Apartment, suite, unit etc."
-                            type="text"
-                          />
+                          <label>Street Name & House Number</label>
+                          <input className="billing-address" type="text" />
                         </div>
                       </div>
-                      <div className="col-lg-12">
+                      <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>Town / City</label>
+                          <label>
+                            Additional Information <small>(optional)</small>
+                          </label>
                           <input type="text" />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>State / County</label>
+                          <label>Postcode</label>
                           <input type="text" />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>Postcode / ZIP</label>
+                          <label>City</label>
                           <input type="text" />
                         </div>
                       </div>
@@ -114,7 +108,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                     </div>
 
                     <div className="additional-info-wrap">
-                      <h4>Additional information</h4>
+                      <h4>Delivery Note</h4>
                       <div className="additional-info">
                         <label>Order notes</label>
                         <textarea
@@ -230,13 +224,13 @@ const Checkout = ({ location, cartItems, currency }) => {
 Checkout.propTypes = {
   cartItems: PropTypes.array,
   currency: PropTypes.object,
-  location: PropTypes.object
+  location: PropTypes.object,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     cartItems: state.cartData,
-    currency: state.currencyData
+    currency: state.currencyData,
   };
 };
 

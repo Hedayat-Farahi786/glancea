@@ -3,7 +3,6 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 import MetaTags from "react-meta-tags";
-import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { connect } from "react-redux";
 import { getDiscountPrice } from "../../helpers/product";
 import {
@@ -11,10 +10,9 @@ import {
   decreaseQuantity,
   deleteFromCart,
   cartItemStock,
-  deleteAllFromCart
+  deleteAllFromCart,
 } from "../../redux/actions/cartActions";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const Cart = ({
   location,
@@ -23,7 +21,7 @@ const Cart = ({
   decreaseQuantity,
   addToCart,
   deleteFromCart,
-  deleteAllFromCart
+  deleteAllFromCart,
 }) => {
   const [quantityCount] = useState(1);
   const { addToast } = useToasts();
@@ -36,10 +34,9 @@ const Cart = ({
         <title>Glancea</title>
         <meta
           name="description"
-          content="Cart page of flone react minimalist eCommerce template."
+          content="Cart page of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
-
 
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
@@ -232,6 +229,49 @@ const Cart = ({
                       </div>
                     </div>
                   </div>
+                  <div className="col-lg-4 col-md-6">
+                    <div className="discount-code-wrapper">
+                      <div className="title-wrap">
+                        <h4 className="cart-bottom-title section-bg-gray">
+                          Use Coupon Code
+                        </h4>
+                      </div>
+                      <div className="discount-code">
+                        <p>Enter your coupon code if you have one.</p>
+                        <form>
+                          <input type="text" required name="name" />
+                          <button className="cart-btn-1" type="submit">
+                            Apply Coupon
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-8 col-md-12 align-self-end">
+                    <div className="grand-totall">
+                      <div className="title-wrap">
+                        <h4 className="cart-bottom-title section-bg-gary-cart">
+                          Cart Total
+                        </h4>
+                      </div>
+                      <h5>
+                        Total products{" "}
+                        <span>
+                          {currency.currencySymbol + cartTotalPrice.toFixed(2)}
+                        </span>
+                      </h5>
+
+                      <h4 className="grand-totall-title">
+                        Grand Total{" "}
+                        <span>
+                          {currency.currencySymbol + cartTotalPrice.toFixed(2)}
+                        </span>
+                      </h4>
+                      <Link to={process.env.PUBLIC_URL + "/checkout"}>
+                        Proceed to Checkout
+                      </Link>
+                    </div>
+                  </div>
                 </div>
 
                 {/* <div className="row">
@@ -356,17 +396,17 @@ Cart.propTypes = {
   decreaseQuantity: PropTypes.func,
   location: PropTypes.object,
   deleteAllFromCart: PropTypes.func,
-  deleteFromCart: PropTypes.func
+  deleteFromCart: PropTypes.func,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     cartItems: state.cartData,
-    currency: state.currencyData
+    currency: state.currencyData,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (item, addToast, quantityCount) => {
       dispatch(addToCart(item, addToast, quantityCount));
@@ -377,9 +417,9 @@ const mapDispatchToProps = dispatch => {
     deleteFromCart: (item, addToast) => {
       dispatch(deleteFromCart(item, addToast));
     },
-    deleteAllFromCart: addToast => {
+    deleteAllFromCart: (addToast) => {
       dispatch(deleteAllFromCart(addToast));
-    }
+    },
   };
 };
 

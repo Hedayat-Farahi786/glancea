@@ -13,10 +13,10 @@ const MyAccount = ({ location }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | My Account</title>
+        <title>Glancea | My Account</title>
         <meta
           name="description"
-          content="Compare page of flone react minimalist eCommerce template."
+          content="Compare page of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
@@ -180,7 +180,7 @@ const MyAccount = ({ location }) => {
 };
 
 MyAccount.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
 };
 
 export default MyAccount;

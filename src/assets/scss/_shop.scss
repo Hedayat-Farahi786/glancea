@@ -2,11 +2,7 @@
 
 .shop-top-bar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media #{$xs-layout} {
-    display: block;
-  }
+  flex-direction: column;
   @media #{$sm-layout} {
     display: flex;
   }
@@ -22,16 +18,18 @@
       display: flex;
     }
     .shop-select {
-      flex: 1;
       margin-right: 50px;
       select {
         font-size: 14px;
-
+        
         min-width: 143px;
         padding: 5px;
-
+        
         color: #606060;
         border: 1px solid #e6e6e6;
+      }
+      @media #{$xs-layout} {
+        flex: 1;
       }
     }
 
@@ -46,7 +44,8 @@
   }
   .showing-text {
     margin: 0;
-
+    font-size: 12px;
+margin: 20px 0 10px;
     color: #606060;
     @media #{$xs-layout} {
       margin: 10px 0;

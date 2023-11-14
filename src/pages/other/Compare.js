@@ -18,7 +18,7 @@ const Compare = ({
   compareItems,
   addToCart,
   deleteFromCompare,
-  currency
+  currency,
 }) => {
   const { pathname } = location;
   const { addToast } = useToasts();
@@ -26,10 +26,10 @@ const Compare = ({
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Compare</title>
+        <title>Glancea | Compare</title>
         <meta
           name="description"
-          content="Compare page of flone react minimalist eCommerce template."
+          content="Compare page of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
@@ -52,7 +52,7 @@ const Compare = ({
                             <th className="title-column">Product Info</th>
                             {compareItems.map((compareItem, key) => {
                               const cartItem = cartItems.filter(
-                                item => item.id === compareItem.id
+                                (item) => item.id === compareItem.id
                               )[0];
                               return (
                                 <td className="product-image-title" key={key}>
@@ -245,18 +245,18 @@ Compare.propTypes = {
   compareItems: PropTypes.array,
   currency: PropTypes.object,
   location: PropTypes.object,
-  deleteFromCompare: PropTypes.func
+  deleteFromCompare: PropTypes.func,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     cartItems: state.cartData,
     compareItems: state.compareData,
-    currency: state.currencyData
+    currency: state.currencyData,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (item, addToast, quantityCount) => {
       dispatch(addToCart(item, addToast, quantityCount));
@@ -264,7 +264,7 @@ const mapDispatchToProps = dispatch => {
 
     deleteFromCompare: (item, addToast) => {
       dispatch(deleteFromCompare(item, addToast));
-    }
+    },
   };
 };
 

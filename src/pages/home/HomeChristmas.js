@@ -2,19 +2,10 @@ import React, { Fragment } from "react";
 import MetaTags from "react-meta-tags";
 import LayoutNine from "../../layouts/LayoutNine";
 import HeroSliderThirtyThree from "../../wrappers/hero-slider/HeroSliderThirtyThree";
-import BannerThirtyTwo from "../../wrappers/banner/BannerThirtyTwo";
 import TabProductEleven from "../../wrappers/product/TabProductEleven";
-import CountDownSix from "../../wrappers/countdown/CountDownSix";
-import TestimonialThree from "../../wrappers/testimonial/TestimonialThree";
 import NewsletterThree from "../../wrappers/newsletter/NewsletterThree";
 import TabProductFifteen from "../../wrappers/product/TabProductFifteen";
-import CountDownFive from "../../wrappers/countdown/CountDownFive";
-import CountDownFour from "../../wrappers/countdown/CountDownFour";
 import CountDownThree from "../../wrappers/countdown/CountDownThree";
-import CountDownTwo from "../../wrappers/countdown/CountDownTwo";
-import CountDownOne from "../../wrappers/countdown/CountDownOne";
-import CountDownSeven from "../../wrappers/countdown/CountDownSeven";
-import CountDownEight from "../../wrappers/countdown/CountDownEight";
 
 const HomeChristmas = () => {
   return (
@@ -23,7 +14,7 @@ const HomeChristmas = () => {
         <title>Glancea</title>
         <meta
           name="description"
-          content="Christmas home of flone react minimalist eCommerce template."
+          content="Christmas home of Glancea react minimalist eCommerce template."
         />
       </MetaTags>
       <LayoutNine
@@ -47,14 +38,14 @@ const HomeChristmas = () => {
           colorClass="pro-puce-color"
         />
         {/* countdown */}
-        <CountDownOne
+        <CountDownThree
           spaceTopClass="pt-95"
           spaceBottomClass="pb-95"
           dateTime="December 31, 2023 23:59:59"
           countDownImage="/assets/img/banner/deal-11.png"
         />
         {/* testimonial */}
-        <TestimonialThree />
+        {/* <TestimonialThree /> */}
         {/* tab product */}
         <TabProductEleven
           category="christmas"
