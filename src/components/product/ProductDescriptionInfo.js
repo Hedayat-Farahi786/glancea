@@ -182,6 +182,7 @@ const ProductDescriptionInfo = ({
           <div className="pro-details-cart btn-hover">
             {productStock && productStock > 0 ? (
               <button
+              style={{width: 'full'}}
                 onClick={() =>
                   addToCart(
                     product,
@@ -214,23 +215,9 @@ const ProductDescriptionInfo = ({
               <i className="pe-7s-like" />
             </button>
           </div>
-          <div className="pro-details-compare">
-            <button
-              className={compareItem !== undefined ? "active" : ""}
-              disabled={compareItem !== undefined}
-              title={
-                compareItem !== undefined
-                  ? "Added to compare"
-                  : "Add to compare"
-              }
-              onClick={() => addToCompare(product, addToast)}
-            >
-              <i className="pe-7s-shuffle" />
-            </button>
-          </div>
         </div>
       )}
-      {product.category ? (
+      {/* {product.category ? (
         <div className="pro-details-meta">
           <span>Categories :</span>
           <ul>
@@ -265,9 +252,9 @@ const ProductDescriptionInfo = ({
         </div>
       ) : (
         ""
-      )}
+      )} */}
 
-      <div className="pro-details-social">
+      {/* <div className="pro-details-social">
         <ul>
           <li>
             <a href="//facebook.com">
@@ -295,7 +282,7 @@ const ProductDescriptionInfo = ({
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

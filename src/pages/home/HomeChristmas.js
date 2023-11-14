@@ -8,6 +8,13 @@ import CountDownSix from "../../wrappers/countdown/CountDownSix";
 import TestimonialThree from "../../wrappers/testimonial/TestimonialThree";
 import NewsletterThree from "../../wrappers/newsletter/NewsletterThree";
 import TabProductFifteen from "../../wrappers/product/TabProductFifteen";
+import CountDownFive from "../../wrappers/countdown/CountDownFive";
+import CountDownFour from "../../wrappers/countdown/CountDownFour";
+import CountDownThree from "../../wrappers/countdown/CountDownThree";
+import CountDownTwo from "../../wrappers/countdown/CountDownTwo";
+import CountDownOne from "../../wrappers/countdown/CountDownOne";
+import CountDownSeven from "../../wrappers/countdown/CountDownSeven";
+import CountDownEight from "../../wrappers/countdown/CountDownEight";
 
 const HomeChristmas = () => {
   return (
@@ -40,7 +47,7 @@ const HomeChristmas = () => {
           colorClass="pro-puce-color"
         />
         {/* countdown */}
-        <CountDownSix
+        <CountDownOne
           spaceTopClass="pt-95"
           spaceBottomClass="pb-95"
           dateTime="December 31, 2023 23:59:59"

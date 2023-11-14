@@ -6,6 +6,7 @@ import ProductGridSingle from "../../components/product/ProductGridSingle";
 import { addToCart } from "../../redux/actions/cartActions";
 import { addToWishlist } from "../../redux/actions/wishlistActions";
 import { addToCompare } from "../../redux/actions/compareActions";
+import ProductGridNine from "./ProductGridNine";
 
 const ProductGrid = ({
   products,
@@ -23,7 +24,7 @@ const ProductGrid = ({
     <Fragment>
       {products.map(product => {
         return (
-          <ProductGridSingle
+          <ProductGridNine
             sliderClassName={sliderClassName}
             spaceBottomClass={spaceBottomClass}
             product={product}

@@ -16,7 +16,7 @@ const CountDownOne = ({ spaceTopClass, spaceBottomClass, bgImg, dateTime }) => {
         <div className="row">
           <div className="col-lg-6 ml-auto">
             <div className="funfact-content text-center">
-              <h2>Deal of the day</h2>
+              <h2>Deals end in</h2>
               <div className="timer">
                 <Countdown date={new Date(dateTime)} renderer={Renderer} />
               </div>

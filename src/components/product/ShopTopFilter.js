@@ -20,7 +20,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
         <div className="row">
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
-            <div className="product-filter">
+            <div className="product-filter product-filter--tag">
               <h5>Categories</h5>
               {uniqueCategories ? (
                 <ul>
@@ -47,7 +47,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
 
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
-            <div className="product-filter">
+            <div className="product-filter product-filter--tag">
               <h5>Color</h5>
               {uniqueColors ? (
                 <ul>
@@ -73,7 +73,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
           </div>
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
-            <div className="product-filter">
+            <div className="product-filter product-filter--tag">
               <h5>Size</h5>
               {uniqueSizes ? (
                 <ul>
@@ -99,7 +99,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
             </div>
           </div>
           {/* Product Filter */}
-          <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
+          {/* <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
             <div className="product-filter product-filter--tag">
               <h5>Tag</h5>
               {uniqueTags ? (
@@ -123,7 +123,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
                 "No tags found"
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

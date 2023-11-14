@@ -23,16 +23,15 @@ const ShopTopActionFilter = ({
               <option value="priceLowToHigh">Price - Low to High</option>
             </select>
           </div>
-          <p>
+        <div className="filter-active" onClick={e => toggleShopTopFilter(e)}>
+            <span style={{marginRight: '10px'}}>Filter</span>
+            <i class="fa fa-sliders" aria-hidden="true"></i>
+        </div>
+        </div>
+          <p className="showing-text">
             Showing {sortedProductCount} of {productCount} result
           </p>
-        </div>
 
-        <div className="filter-active">
-          <button onClick={e => toggleShopTopFilter(e)}>
-            <i className="fa fa-plus"></i> filter
-          </button>
-        </div>
       </div>
 
       {/* shop top filter */}

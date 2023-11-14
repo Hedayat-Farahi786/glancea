@@ -12,7 +12,7 @@ const ProductDescriptionTab = ({ spaceBottomClass, productFullDesc }) => {
             <Nav variant="pills" className="description-review-topbar">
               <Nav.Item>
                 <Nav.Link eventKey="additionalInfo">
-                  Additional Information
+                  Additional Info
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>

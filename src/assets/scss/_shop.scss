@@ -11,14 +11,18 @@
     display: flex;
   }
   .select-shoing-wrap {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     @media #{$xs-layout} {
-      display: block;
+      display: flex;
     }
     @media #{$sm-layout} {
       display: flex;
     }
     .shop-select {
+      flex: 1;
       margin-right: 50px;
       select {
         font-size: 14px;
@@ -30,16 +34,25 @@
         border: 1px solid #e6e6e6;
       }
     }
-    p {
-      margin: 0;
 
-      color: #606060;
-      @media #{$xs-layout} {
-        margin: 5px 0 10px;
-      }
-      @media #{$sm-layout} {
-        margin: 0;
-      }
+    .filter-active{
+      border: 1px solid black;
+      padding: 5px 15px;
+      font-weight: normal;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+  }
+  .showing-text {
+    margin: 0;
+
+    color: #606060;
+    @media #{$xs-layout} {
+      margin: 10px 0;
+    }
+    @media #{$sm-layout} {
+      margin: 0;
     }
   }
   .shop-tab {
@@ -57,7 +70,7 @@
         margin-left: 0;
       }
       &.active {
-        color: #fa6bff;
+        color: #D92129;
       }
     }
   }

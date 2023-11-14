@@ -33,21 +33,16 @@ const Cart = ({
   return (
     <Fragment>
       <MetaTags>
-        <title>Flone | Cart</title>
+        <title>Glancea</title>
         <meta
           name="description"
           content="Cart page of flone react minimalist eCommerce template."
         />
       </MetaTags>
 
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Cart
-      </BreadcrumbsItem>
 
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
@@ -239,7 +234,7 @@ const Cart = ({
                   </div>
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-lg-4 col-md-6">
                     <div className="cart-tax">
                       <div className="title-wrap">
@@ -328,7 +323,7 @@ const Cart = ({
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </Fragment>
             ) : (
               <div className="row">

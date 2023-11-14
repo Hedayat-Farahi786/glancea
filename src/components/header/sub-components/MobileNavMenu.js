@@ -7,7 +7,7 @@ const MobileNavMenu = ({ strings }) => {
   return (
     <nav className="offcanvas-navigation" id="offcanvas-navigation">
       <ul>
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/"}>{strings["home"]}</Link>
           <ul className="sub-menu">
             <li className="menu-item-has-children">
@@ -336,13 +336,18 @@ const MobileNavMenu = ({ strings }) => {
               </ul>
             </li>
           </ul>
+        </li> */}
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/"}>
+            {strings["home"]}
+          </Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+          <Link to={process.env.PUBLIC_URL + "/shop-grid-filter"}>
             {strings["collection"]}
           </Link>
         </li>
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/"}>{strings["pages"]}</Link>
           <ul className="sub-menu">
             <li>
@@ -391,8 +396,8 @@ const MobileNavMenu = ({ strings }) => {
               </Link>
             </li>
           </ul>
-        </li>
-        <li className="menu-item-has-children">
+        </li> */}
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
             {strings["blog"]}
           </Link>
@@ -418,12 +423,27 @@ const MobileNavMenu = ({ strings }) => {
               </Link>
             </li>
           </ul>
-        </li>
+        </li> */}
+        <li>
+              <Link to={process.env.PUBLIC_URL + "/about"}>
+                {strings["about_us"]}
+              </Link>
+            </li>
         <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}>
             {strings["contact_us"]}
           </Link>
         </li>
+        <li>
+              <Link to={process.env.PUBLIC_URL + "/my-account"}>
+                {strings["my_account"]}
+              </Link>
+            </li>
+            <li>
+              <Link to={process.env.PUBLIC_URL + "/login-register"}>
+                {strings["login_register"]}
+              </Link>
+            </li>
       </ul>
     </nav>
   );

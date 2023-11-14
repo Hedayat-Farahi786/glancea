@@ -270,7 +270,8 @@
         color: #fff;
         border-radius: 3px;
         &.pink {
-          background-color: #fa6bff;
+        color: $theme-color;
+
         }
         &.purple {
           background-color: $theme-color;
@@ -1371,7 +1372,7 @@
       transition: all 0.0s ease 0s;
 
       border: none;
-      background: #fa6bff none repeat scroll 0 0;
+      background: #D92129 none repeat scroll 0 0;
     }
     .ui-slider-handle {
       width: 15px;
@@ -1379,7 +1380,7 @@
       margin-left: 0;
 
       border: medium none;
-      border: 4px solid #fa6bff;
+      border: 4px solid #D92129;
       border-radius: 50%;
       background: #fff none repeat scroll 0 0;
     }
@@ -1421,7 +1422,7 @@
       top: 20px;
       right: 20px;
       &.pink {
-        color: #fa6bff;
+        color: #D92129;
       }
       &.red {
         color: #ff3d2a;
@@ -1479,7 +1480,7 @@
         background-color: $theme-color;
         &:hover,
         &.active {
-          background-color: #fa6bff;
+          background-color: #D92129;
         }
       }
       &.product-action-2-red {
@@ -1510,7 +1511,7 @@
 
         border-radius: 3px;
         &.pink {
-          color: #fa6bff;
+          color: #D92129;
         }
         &.purple {
           color: $theme-color;
@@ -1553,7 +1554,7 @@
           &.old {
             text-decoration: line-through;
 
-            color: #fa6bff;
+            color: #D92129;
             &.red {
               color: #ff3d2a;
             }
@@ -1591,7 +1592,7 @@
             &.old {
               text-decoration: line-through;
 
-              color: #fa6bff;
+              color: #D92129;
             }
           }
         }
@@ -1864,7 +1865,8 @@
           background-color: $theme-color;
         }
         &.pink {
-          background-color: #fa6bff;
+        color: $theme-color;
+
         }
         &:last-child {
           margin-bottom: 0;
@@ -1966,7 +1968,7 @@
           background-color: #a749ff;
           &:hover,
           &.active {
-            background-color: #fa6bff;
+            background-color: #D92129;
           }
           &:disabled {
             cursor: not-allowed;
@@ -2163,7 +2165,7 @@
         &.old {
           text-decoration: line-through;
 
-          color: #fa6bff;
+          color: #D92129;
         }
       }
       &.price-4-center {
@@ -2307,7 +2309,7 @@
         background-color: $theme-color;
       }
       &.pink {
-        background-color: #fa6bff;
+        color: $theme-color;
       }
       &:last-child {
         margin-bottom: 0;
@@ -2355,7 +2357,7 @@
         &:hover,
         &.active {
           color: #fff;
-          background-color: #fa6bff;
+          background-color: #D92129;
         }
       }
     }
@@ -2401,7 +2403,7 @@
         &.old {
           text-decoration: line-through;
 
-          color: #fa6bff;
+          color: #D92129;
         }
       }
     }

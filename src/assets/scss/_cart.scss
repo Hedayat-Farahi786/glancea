@@ -203,7 +203,7 @@ h3.cart-page-title {
 
   padding: 30px 0 55px;
   @media #{$xs-layout} {
-    display: block;
+    // display: block;
 
     padding: 30px 0 15px;
   }
@@ -226,11 +226,12 @@ h3.cart-page-title {
     @media #{$md-layout} {
       font-size: 13px;
 
-      padding: 18px 25px 17px;
+      // padding: 18px 25px 17px;
     }
     @media #{$xs-layout} {
       margin: 0 0 15px;
-      padding: 18px 40px 17px;
+      padding: 15px 20px;
+      // padding: 18px 40px 17px;
     }
     &:hover {
       color: #fff;
@@ -249,6 +250,10 @@ h3.cart-page-title {
     }
     @media #{$md-layout} {
       margin-right: 15px;
+    }
+    @media #{$xs-layout} {
+    margin-right: 0;
+    margin-left: 10px;
     }
   }
 }
